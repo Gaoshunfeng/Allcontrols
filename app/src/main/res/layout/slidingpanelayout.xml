@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SlidingPaneLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/lv_sliding"
+        android:layout_width="150dp"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+<android.support.v4.widget.SwipeRefreshLayout
+    android:id="@+id/refresh"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_sliding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffdd"
+            android:paddingLeft="100dp"
+            android:text="向右滑动打开侧栏"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="20sp"
+            android:layout_row="4"
+        android:layout_column="0"
+        android:layout_columnSpan="3"
+        android:layout_gravity="fill"/>
+        <TextView
+            android:id="@+id/tv_sliding2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffdd"
+            android:paddingLeft="100dp"
+            android:text="下拉刷新"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+</android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+</android.support.v4.widget.SlidingPaneLayout>
